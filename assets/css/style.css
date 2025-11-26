@@ -23,6 +23,18 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Header */
+
+#header .lead {
+    font-family: var(--secondary-font)
 }
 
 .sub-heading-color {
