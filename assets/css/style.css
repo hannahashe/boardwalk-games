@@ -1,53 +1,72 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Oswald:wght@200..700&display=swap");
 
 /* CSS Variables */
 :root {
-    --primary-font: "Inter", sans-serif;
-    --secondary-font: "Macondo", cursive;
-    --primary-color: #416a8e; /* blue */
-    --secondary-color: #422e1c; /*light brown*/
-    --highlight-color: #416a8e;
-    --highlight-color-light: #7a9fc2;
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Macondo", cursive;
+  --primary-color: #416a8e; /* blue */
+  --secondary-color: #422e1c; /*light brown*/
+  --highlight-color: #416a8e;
+  --highlight-color-light: #7a9fc2;
 }
 
 /* Global styles */
 
 body {
-    font-family: var(--primary-font);
+  font-family: var(--primary-font);
 }
 
 h1,
 h2,
 h3 {
-    font-family: var(--secondary-font);
-    color: var(--primary-color);
-    text-transform: uppercase;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 2rem;
 }
 
 .section {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Header */
 
 #header .lead {
-    font-family: var(--secondary-font)
+  font-family: var(--secondary-font);
 }
 
 .sub-heading-color {
-    color:var(--highlight-color);
+  color: var(--highlight-color);
 }
 
 /* Navbar */
 #navbar {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 #navbar .logo {
-    width: 30px;
+  width: 30px;
+}
+
+/* Services section */
+
+#services .card-footer {
+  font-weight: bold;
+  color: var(--highlight-color);
+  background-color: transparent;
+}
+
+#services .card {
+  margin-bottom: 1.5rem;
 }
 
 /* grid visualisation CSS for testing
@@ -61,3 +80,37 @@ h3 {
     border: 2px solid white;
     background-color: lightgray;
 } */
+
+/* Media queries */
+/* Medium devices (tablets, 768px and up) */
+
+@media screen and (min-width: 768px) {
+  /* Make all service cards the same height for consistency */
+  #services .card-body {
+    min-height: 119px;
+  }
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+  /* Make all service cards the same height for consistency */
+  #services .card-body {
+    min-height: auto;
+  }
+}
+
+/* Extra large screens (laptops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  /* Make all service cards the same height for consistency */
+  #services .card-body {
+    min-height: 220px;
+  }
+}
+
+/* XXL devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+  /* Make all service cards the same height for consistency */
+  #services .card-body {
+    min-height: 195px;
+  }
+}
