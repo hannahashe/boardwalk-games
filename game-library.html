@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
 
@@ -48,7 +47,11 @@
   <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
   <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg fixed-top"
+      data-bs-theme="dark"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="assets/images/logo-sm-white.png" alt="Logo" class="logo" />
@@ -80,7 +83,7 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html#services">Services</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="index.html#events">Events</a>
             </li>
             <li class="nav-item">
@@ -369,72 +372,89 @@
         <div class="container">
           <div class="row d-flex justify-content-center">
             <div class="col-12 text-center">
-        <h2>Reserve a game</h2>
+              <h2>Reserve a game</h2>
             </div>
-        <div class="col-12 col-md-6">
-        <p>
-          Reserve a board game for your next visit to Boardwalk Games. Pick your
-          challenge, and let the adventure begin! Fill out your details and
-          preferred game below, and we'll have it set aside for you when you
-          arrive.
-        </p>
-        </div>
-        <div class="booking-form d-flex col-12 justify-content-center">
-          <form action="success.html" method="GET">
-            <div class="mb-3">
-              <label for="FullName" class="form-label">Full name</label>
-              <input type="text" class="form-control" id="FullName" required />
+            <div class="col-12 col-md-6">
+              <p>
+                Reserve a board game for your next visit to Boardwalk Games.
+                Pick your challenge, and let the adventure begin! Fill out your
+                details and preferred game below, and we'll have it set aside
+                for you when you arrive.
+              </p>
             </div>
-            <div class="mb-3">
-              <label for="InputNumber" class="form-label">Phone number</label>
-              <input
-                type="number"
-                class="form-control"
-                id="InputNumber"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="InputEmail1" class="form-label">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="InputEmail1"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="SelectMenu" class="form-label">Select game</label>
-              <select
-                class="form-select"
-                aria-label="Default select example"
-                id="SelectMenu"
-                required
-              >
-                <option selected disabled>Select game</option>
-                <option value="1">Galaxy Pioneers</option>
-                <option value="2">Mystic Woods</option>
-                <option value="3">Captian's Gambit</option>
-                <option value="4">Critter Quest</option>
-                <option value="5">Settlers of Catan</option>
-                <option value="6">Monopoly</option>
-                <option value="7">Exploding Kittens</option>
-                <option value="8">Cluedo</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="InputDate" class="form-label">Requested Date</label>
-              <input type="date" class="form-control" id="InputDate" required />
-            </div>
+            <div class="booking-form d-flex col-12 justify-content-center">
+              <form action="success.html" method="GET">
+                <div class="mb-3">
+                  <label for="FullName" class="form-label">Full name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="FullName"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="InputNumber" class="form-label"
+                    >Phone number</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="InputNumber"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="InputEmail1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="InputEmail1"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="SelectMenu" class="form-label">Select game</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="SelectMenu"
+                    required
+                  >
+                    <option selected disabled>Select game</option>
+                    <option value="1">Galaxy Pioneers</option>
+                    <option value="2">Mystic Woods</option>
+                    <option value="3">Captian's Gambit</option>
+                    <option value="4">Critter Quest</option>
+                    <option value="5">Settlers of Catan</option>
+                    <option value="6">Monopoly</option>
+                    <option value="7">Exploding Kittens</option>
+                    <option value="8">Cluedo</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="InputDate" class="form-label"
+                    >Requested Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="InputDate"
+                    required
+                  />
+                </div>
 
-            <div class="col-12 align-item-right">
-            <button type="submit" class="btn custom-button-outline">
-              Submit
-            </button>
+                <div class="mb-3 col-12 align-item-right">
+                  <button type="submit" class="btn custom-button-outline">
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
       </section>
     </main>
     <!-- Footer -->
